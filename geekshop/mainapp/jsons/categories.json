@@ -1,0 +1,37 @@
+[
+  {
+      "name": "Дом",
+      "description": "",
+      "href": "products_home",
+      "created": "2021-12-17T21:39:57.643Z",
+      "updated": "2021-12-17T22:51:29.398Z"
+  },
+  {
+      "name": "Офис",
+      "description": "",
+      "href": "products_office",
+      "created": "2021-12-17T21:40:04.578Z",
+      "updated": "2021-12-17T22:51:09.813Z"
+  },
+  {
+      "name": "Модерн",
+      "description": "",
+      "href": "products_modern",
+      "created": "2021-12-17T21:40:15.115Z",
+      "updated": "2021-12-17T22:50:53.977Z"
+  },
+  {
+      "name": "Классика",
+      "description": "",
+      "href": "products_classic",
+      "created": "2021-12-17T21:40:21.353Z",
+      "updated": "2021-12-17T22:50:37.142Z"
+  },
+  {
+      "name": "Все",
+      "description": "",
+      "href": "products/",
+      "created": "2021-12-17T22:51:58.199Z",
+      "updated": "2021-12-17T22:51:58.199Z"
+  }
+]
