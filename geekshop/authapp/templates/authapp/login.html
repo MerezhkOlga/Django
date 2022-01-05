@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-
+{{ pass }}
     <form class="form-horizontal" action="{% url 'auth:login' %}" method="post">
         {% csrf_token %}
         {{ login_form.as_p }}

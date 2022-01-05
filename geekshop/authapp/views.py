@@ -18,7 +18,6 @@ def login(request):
         if user and user.is_active:
             auth.login(request, user)
             return HttpResponseRedirect(reverse('index'))
-
     context = {
         'title': title,
         'login_form': login_form,
