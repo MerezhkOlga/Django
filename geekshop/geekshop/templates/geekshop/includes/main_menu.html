@@ -1,14 +1,9 @@
-
 <a href="{% url 'index' %}" class="logo"></a>
 <ul class="menu">
-    <li><a href="{% url 'index' %}" {% if request.path == '/' %}
-class="active" {% endif %}>домой</a></li>
-    <li><a href="{% url 'products:index' %}"{% if request.path == '/products/' %}
-class="active" {% endif %}>продукты</a></li>
-    <li><a href="{% url 'contacts' %}"{% if request.path == '/contacts/' %}
-class="active" {% endif %}>контакты</a></li>
-
-{% if user.is_authenticated %}
+    <li><a href="{% url 'index' %}" class="active">домой</a></li>
+    <li><a href="{% url 'products:index' %}">продукты</a></li>
+    <li><a href="{% url 'contacts' %}">контакты</a></li>
+    {% if user.is_authenticated %}
         <li>
             <a href="{% url 'auth:edit' %}">
                 {{ user.first_name|default:'Пользователь' }}
@@ -22,12 +17,15 @@ class="active" {% endif %}>контакты</a></li>
           <a href="{% url 'auth:login' %}">войти</a>
         {% endif %}
     </li>
-    <li>
-        <a href="{% url 'basket:index' %}" class="basket">
-            <span>
-                {% if basket %} {{ basket|length }} {% endif %}
-            </span>
-        </a>
-    </li>
+    {% if basket %}
+        <li>
+            <a href="{% url 'basket:index' %}" class="basket">
+                <span>
+                    {{ basket.0.total_cost|floatformat:0 }} руб
+                    ({{ basket.0.total_quantity }} шт)
+                </span>
+            </a>
+        </li>
+    {% endif %}
 </ul>
 <a href="#" class="search"></a>
