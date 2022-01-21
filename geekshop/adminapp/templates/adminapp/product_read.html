@@ -1,0 +1,25 @@
+{% extends 'adminapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="card" style="width: 18rem;">
+  <img src="/media/{{ object.image }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ object.name }}</h5>
+    <p class="card-text">{{ object.description }}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ object.short_desc }}</li>
+    <li class="list-group-item">Цена: {{ object.price }}</li>
+    <li class="list-group-item">Остаток на складе: {{ object.quantity }}</li>
+
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link">Редактировать</a>
+    <a href="#" class="card-link">Удалить</a>
+  </div>
+</div>
+
+
+{% endblock %}
