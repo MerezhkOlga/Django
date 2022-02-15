@@ -1,0 +1,47 @@
+[
+  {
+      "category": 3,
+      "name": "Лампа-яйцо",
+      "image": "products_images/product-1.jpg",
+      "short_desc": "Напомнит вам о курах",
+      "description": "",
+      "price": "3600.00",
+      "quantity": 4
+  },
+  {
+      "category": 1,
+      "name": "Довольный стул",
+      "image": "products_images/product-4.jpg",
+      "short_desc": "Улыбка поднимает настроение",
+      "description": "",
+      "price": "2000.00",
+      "quantity": 20
+  },
+  {
+      "category": 2,
+      "name": "Часы для офиса",
+      "image": "products_images/product-4-sm.jpg",
+      "short_desc": "Цифры не нужны, если ты здесь навечно",
+      "description": "",
+      "price": "3000.00",
+      "quantity": 30
+  },
+  {
+      "category": 4,
+      "name": "Обычный стул",
+      "image": "products_images/product-21.jpg",
+      "short_desc": "Хоть что-то в доме будет как у людей",
+      "description": "",
+      "price": "2500.00",
+      "quantity": 21
+  },
+  {
+      "category": 3,
+      "name": "Настольный светильник",
+      "image": "products_images/product-31.jpg",
+      "short_desc": "Даже лампа изящнее тебя",
+      "description": "",
+      "price": "0.00",
+      "quantity": 0
+  }
+]
